@@ -14,6 +14,7 @@ export class AppComponent implements OnInit{
   personForm: FormGroup;
   people:any;
   errorPerson:any = null;
+
   constructor(
     public fb:FormBuilder,
     public personService: PersonService,
@@ -54,6 +55,16 @@ export class AppComponent implements OnInit{
     
     this.personService.getAllPerson().subscribe(resp=>{
       this.people = resp;
+    })
+  }
+
+  deletePerson(person:any):void{
+    this.personService.deletePerson(person.id).subscribe(resp=>{
+      if(resp.status == 200){
+        this.people.pop(person);
+      }
+      else
+        this.errorPerson = 'No se ha podido eliminar el registro.';
     })
   }
 }

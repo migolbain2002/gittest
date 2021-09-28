@@ -14,7 +14,7 @@ public class Person {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int id;
+	private long id;
 	private long identification;
 	private String name;
 	private String last_name;
@@ -24,7 +24,7 @@ public class Person {
 	
 	public Person(){}
 	
-	public Person(int id, long identification, String name, String last_name, int age, int height) {
+	public Person(long id, long identification, String name, String last_name, int age, int height) {
 		super();
 		this.id = id;
 		this.identification = identification;
@@ -35,10 +35,10 @@ public class Person {
 	}
 	
 	
-	public int getId() {
+	public long getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 	public long getIdentification() {
