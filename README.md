@@ -1,6 +1,11 @@
 # TestGit
  Pasos para inicializar la app
 
+Para descargar el proyecto desde git
+
+git clone https://github.com/migolbain2002/gittest/
+
+
 Inicializar BackEnd - Java Spring Boot
 
 1. Abrir algun IDE (en este caso se uso la herramienta Spring Tool Suite 4)
