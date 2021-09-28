@@ -60,8 +60,8 @@ public class PersonUnitTests {
 	}
 	
 	@Test
-	void deletePersonById() throws Exception{
-		mockMvc.perform(delete("/person/delete/"+19))
+	void deleteUserById() throws Exception{
+		mockMvc.perform(delete("/person/delete/"+1))
 		.andExpect(status().isOk());
 	}
 	
