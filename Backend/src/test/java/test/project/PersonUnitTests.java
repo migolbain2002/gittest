@@ -24,7 +24,7 @@ import test.project.model.Person;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @AutoConfigureMockMvc
-public class BusinessUnitTests {
+public class PersonUnitTests {
 
 	
 	@Autowired
@@ -60,8 +60,8 @@ public class BusinessUnitTests {
 	}
 	
 	@Test
-	void deleteUserById() throws Exception{
-		mockMvc.perform(delete("/person/delete/"+1))
+	void deletePersonById() throws Exception{
+		mockMvc.perform(delete("/person/delete/"+19))
 		.andExpect(status().isOk());
 	}
 	
