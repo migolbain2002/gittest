@@ -47,6 +47,7 @@
               <th>Apellidos</th>
               <th>Edad</th>
               <th>Altura</th>
+              <th>Acciones</th>
             </tr>
           </thead>
             <tbody>
@@ -56,6 +57,7 @@
                 <td>{{item.last_name}}</td>
                 <td>{{item.age}}</td>
                 <td>{{item.height}}</td>
+                <td><button type="submit" class="btn btn-danger" (click)="deletePerson(item)">Eliminar</button></td>
               </tr>
             </tbody>
           

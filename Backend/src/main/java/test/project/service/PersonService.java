@@ -91,7 +91,7 @@ public class PersonService implements PersonRepository{
 	}
 	
 	@Override
-	public Person getByIdentification(Long id) {
+	public Person getByIdentification(long id) {
 		return personRepository.getByIdentification(id);
 	}
 
