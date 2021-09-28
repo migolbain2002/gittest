@@ -1,5 +1,5 @@
 # TestGit
- Pasos para instalar la app
+ Pasos para inicializar la app
 
 Inicializar BackEnd - Java Spring Boot
 
@@ -15,5 +15,5 @@ Inicializar Frontend - Angular
 
 Instalacion de Docker - PostgreSQL
 
-1. Abrir Docker
+1. Abrir Docker Desktop for Windows
 2. Ejecutar la base de datos (tener previamente configurado docker en la aplicacion y la imagen de la base de datos).
